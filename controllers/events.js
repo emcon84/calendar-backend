@@ -64,7 +64,7 @@ const updateEvent = async (req, res = response) => {
             user: uid
         }
 
-        await Event.findByIdAndUpdate(eventId, newEvent, { new: true });
+        const eventUpdate = await Event.findByIdAndUpdate(eventId, newEvent, { new: true });
 
         res.json({
             ok: true,

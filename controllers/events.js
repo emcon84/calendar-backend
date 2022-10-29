@@ -35,10 +35,6 @@ const createEvent = async (req, res = response) => {
     }
 
 
-    return res.status(200).json({
-        ok: true,
-        msg: 'createEvents'
-    })
 }
 
 const updateEvent = async (req, res = response) => {
